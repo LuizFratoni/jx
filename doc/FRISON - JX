@@ -1,0 +1,59 @@
+
+Frison - JX
+JavaScript (X) Cross Plataform UI Framework 
+
+
+Componentes Básicos:
+
+UI.View
+UI.Text
+UI.Image
+UI.Container ( Orientations - none, horizontal, vertical) 
+UI.ScrollView
+
+
+Form.Handler
+Form.Text
+Form.ToolButton
+Form.Combo
+Form.PopupButton
+Form.Popup
+Form.DateField
+Form.Tabs
+
+
+Métodos
+
+
+UI.VIEW
+	use ( {} ) ; // use ({ BackgroundColor: “”, Border : { width} });
+	setBackgroundColor
+	setPositionMode(‘’); // fixed, relative
+	setWidth
+	setHeight
+	setBorder( { width: 1, color: “#fffff”, style: “solid”} )
+	setBorderLeft //top// 
+	setBorderRadius
+	getDOMElement() ; // retorna o ELEMENTO HTML DOM
+
+    eventos
+    onMouseOver, onMouseOut, onMouseUp, onMouseDown, onClick, onDoubleClick
+    
+    Exemplo:
+        public.onMouseOver(function(e){
+            public.setBackgroundColor("#000000");
+        })
+	
+UI.Container
+	add() ;
+	remove();
+	clear();
+    setOrientation();
+	forEach();
+
+UI.Text
+	setFontFamily(“”);
+	setFontColor(“”);
+	setFontSize(“”);
+	setFontWeight(“”); //Bold, Normal, Strong
+

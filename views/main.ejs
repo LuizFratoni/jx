@@ -1,0 +1,81 @@
+<html>
+<head>
+
+    <title>FrisonSIG - Sistema Integrado de Gest&atilde;o</title>
+    <script type="text/javascript" src="core/f2-io.js" ></script>
+    <script type="text/javascript" src="core/f2-jx.js" ></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <!-- <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"> !-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="resources/static/autosig_font.css"></head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+		
+    <style type="text/css">
+
+        body { background-color : #ebebeb; font-family: Arial, Helvetica, sans-serif; }
+        *[contenteditable] {
+             -webkit-user-select: auto !important;
+        }
+
+        textarea:focus, input:focus{
+           outline: none;
+        }
+
+       *:focus {
+            outline: none;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+
+</body>
+
+
+<script type="text/javascript">
+        document.body.oncontextmenu = function(e){
+            return false;
+        }
+        
+        document.body.onmousedown = function(e){
+            if (e.clientY < 30) Widgets.NCClick(window);
+        }
+
+
+        try{
+
+            console.log();
+            UI.initialize();
+
+
+            CLIENT_VERSION = "1.2";
+
+            UI.resourcePath = "resources/";
+
+            var MX = {}
+                
+
+            Class.setClassPath("core/");
+
+            
+            var DeveloperStudio = Class.createInstance("devstudio");
+
+            DeveloperStudio.run();
+
+
+
+        } catch(err){
+                 console.error("Initialization Error: "+err);
+        }
+
+
+</script>
+
+
+</html>
